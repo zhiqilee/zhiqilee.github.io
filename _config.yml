@@ -2,7 +2,7 @@
 title: Zhiqi Lee's blog
 description: A blog about Zhiqi Lee
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://zhiqilee.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Zhiqi Lee
