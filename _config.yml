@@ -1,7 +1,7 @@
 # Site settings
 title: Zhiqi Lee's blog
 description: A blog about Zhiqi Lee
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://zhiqilee.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
