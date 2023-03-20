@@ -1,4 +1,15 @@
-<div>
-    {% include /博观/sidebar.html %}
-</div>
-
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <!--头部导航导入-->
+        <div>
+            <div id="sidebar"></div>
+        </div>
+        <script>
+            $("#sidebar").load("sidebar.html");
+        </script>
+    </body>
+</html>
