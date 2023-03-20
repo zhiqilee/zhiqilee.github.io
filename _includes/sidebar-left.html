@@ -4,25 +4,10 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-        .container{
-            padding: 10px;
-            border: 1px solid #ffa200;
-            margin-bottom: 40px;
-        }
-        .container .left{
-            background-color: #4b83e2;
-        }
-        .container .right {
-            background-color: #ff3b30;
-        }
-
         /*左浮动固定宽度,右边margin-left*/
         .container2 .left{
             float: left;
             width: 100px;
-        }
-        .container2 .right{
-            margin-left: 100px;
         }
         /*清除浮动*/
         .container2:after{
@@ -36,9 +21,8 @@
     </style>
 </head>
 <body>
-<div class="container container2">
-    <div class="left">左边左边左边左边左边左边左边左边左边左边</div>
-    <div class="right">右边右边右边右边右边右边右边右边右边右边右边右边右边右边右边右边右边</div>
+<div class="container2">
+    <div class="left"><img alt="sunrise" src="{{ "/assets/img/sunrise.jpg" | prepend: site.baseurl }}"></div>
 </div>
 </body>
 </html>
