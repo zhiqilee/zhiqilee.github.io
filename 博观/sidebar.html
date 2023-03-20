@@ -1,20 +1,12 @@
 <div id="sidebar">
     <style>
         /*左浮动固定宽度,右边margin-left*/
-        .container2 .left{
-            float: left;
-        }
-        /*清除浮动*/
-        .container2:after{
-            content: "";
-            height: 0;
-            line-height: 0;
-            display: block;
-            visibility: hidden;
-            clear: both;
+        .left{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
         }
     </style>
-    <div class="container2">
-        <div class="left"><img alt="sunrise" src="/assets/img/sunrise.jpg" width="420" height="950" /></div>
-    </div>
+    <div class="left"><img alt="sunrise" src="/assets/img/sunrise.jpg" width="420" height="950" /></div>
 </div>
