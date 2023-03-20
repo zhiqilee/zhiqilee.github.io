@@ -1,42 +1,44 @@
-<header class="masthead">
-  {% if site.avatar -%}
-    <div class="avatar">
-      {%- if site.avatar contains "://" -%}
-        {%- assign avatar = site.avatar -%}
-      {%- else -%}
-        {%- assign avatar = site.avatar | relative_url -%}
-      {%- endif -%}
-      <img src="{{ avatar }}" class="avatar-image" alt="{{ site.author.name }}">
-    </div>
-  {%- endif %}
-  <div class="masthead-title">
-    <a href="{{ "/" | relative_url }}" title="Home">{{ site.title }}</a>
-  </div>
-  <div class="masthead-tagline">
-    <small>{{ site.description }}</small>
-  </div>
-  {%- if site.data.navigation -%}
-  <nav class="navigation">
-    <ul class="navigation-list">
-    {%- for nav in site.data.navigation -%}
-      <li class="navigation-item">
-        <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
-      </li>
-    {%- endfor -%}
-    </ul>
-  </nav>
-  {%- endif -%}
-  {% if site.data.social -%}
-    <div class="social pure-menu pure-menu-horizontal">
-      <ul class="social-icons pure-menu-list">
-      {% for social in site.data.social -%}
-        <li class="pure-menu-item">
-          <a class="social-icon pure-menu-link" href="{{ social.url }}">
-            <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
-          </a>
-        </li>
-      {%- endfor %}
-      </ul>
-    </div>
-  {%- endif %}
-</header>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .container{
+            padding: 10px;
+            border: 1px solid #ffa200;
+            margin-bottom: 40px;
+        }
+        .container .left{
+            background-color: #4b83e2;
+        }
+        .container .right {
+            background-color: #ff3b30;
+        }
+
+        /*左浮动固定宽度,右边margin-left*/
+        .container2 .left{
+            float: left;
+            width: 100px;
+        }
+        .container2 .right{
+            margin-left: 100px;
+        }
+        /*清除浮动*/
+        .container2:after{
+            content: "";
+            height: 0;
+            line-height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="container container2">
+    <div class="left">左边左边左边左边左边左边左边左边左边左边</div>
+    <div class="right">右边右边右边右边右边右边右边右边右边右边右边右边右边右边右边右边右边</div>
+</div>
+</body>
+</html>
