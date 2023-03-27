@@ -1,43 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>页面分为左右两部分的布局</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
-
-		.container {
-			display: flex;
-			height: 100vh;
-		}
-
-		.menu {
-			background-color: #ccc;
-			flex: 0 0 200px;
-			height: 100%;
-			position: fixed;
-		}
-
-		.content {
-			flex: 1;
-			height: 100%;
-			overflow-y: scroll;
-			padding: 20px;
-		}
-	</style>
+	<title>博观</title>
 </head>
 <body>
-	<div class="container">
-		<div class="menu">
-			<!-- 这里是菜单栏内容 -->
-			<p>1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p>
-		</div>
-		<div class="content">
-			<!-- 这里是右部分内容 -->
-			<p>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</p>
-		</div>
-	</div>
+	<!--#include file="sidebar.html" -->
 </body>
 </html>
