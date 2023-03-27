@@ -1,15 +1,42 @@
-<div id="sidebar">
-    <style>
-        *{
-	    padding:0px;
-	    margin:0px;
-	}
-        .left{
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-        }
-    </style>
-    <div class="left"><img alt="sunrise" src="/assets/img/sunrise.jpg" width="425" height="950" /></div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			height: 100vh;
+		}
+
+		.sidebar_left {
+			background-color: #ccc;
+			flex: 0 0 200px;
+			height: 100%;
+			position: fixed;
+		}
+
+		.content {
+			flex: 1;
+			height: 100%;
+			overflow-y: scroll;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar_left">
+			<!-- 这里是菜单栏内容 -->
+			<p>11111111111111111111111111111111111111111111111111</p>
+		</div>
+		<div class="content">
+			<!-- 这里是右部分内容 -->
+			<p>22222222222222222222222222222222222222222222222222</p>
+		</div>
+	</div>
+</body>
+</html>
