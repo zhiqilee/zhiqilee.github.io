@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    body {
+	margin: 0;
+	padding: 0;
+    }
+    a {
+    	text-decoration :none;
+    }
+    
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 5%;
+        right: 30%;
+        background-color: #fff;
+        padding: 15px;
+    }
+    nav {
+  	position: relative;
+    }
+    nav a {
+  	margin-right: 40px;
+    }
+    nav a:hover {
+  	color: #abf;
+	}
+    
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: #abf;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    nav::after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	height: 15px;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+
+</style>
+</head>
+<body>
+   <nav id="navbar">
+    <a href="/少年游/少年游-Dates.html" target="_top" style="font-size: 20px; color:#808080;">Dates</a>
+    <a href="/少年游/少年游-Tags.html" target="_top" style="font-size: 20px; color:#808080">Tags</a>
+  </nav>
+</body>
+</html>
